@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#160f24">
+  <meta name="description" content="A belated birthday universe made especially for Bushra.">
+  <title>Bushra's Birthday Universe ✨</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Great+Vibes&family=Playfair+Display:ital,wght@0,600;0,700;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+
+  <section class="intro" id="intro">
+    <div class="aurora a1"></div><div class="aurora a2"></div>
+    <div class="intro-card">
+      <div class="seal">B</div>
+      <span class="eyebrow">A birthday universe made just for</span>
+      <h1>Bushra</h1>
+      <p>I may be late, but this little universe comes with a whole lot of heart.</p>
+      <div class="intro-stats">
+        <span><strong>06</strong>chapters</span>
+        <span><strong>∞</strong>wishes</span>
+        <span><strong>01</strong>Bushra</span>
+      </div>
+      <button class="start" id="start" type="button"><span>Start the surprise</span><i>♫</i></button>
+    </div>
+  </section>
+
+  <div class="experience" id="experience" aria-hidden="true">
+    <header class="topbar">
+      <button class="brand" data-go="0" type="button"><span>B</span><strong>Bushra's Universe</strong></button>
+      <div class="progress"><b id="pageNumber">01</b><i><span id="progressFill"></span></i><b>06</b></div>
+      <div class="actions">
+        <button class="icon" id="fullscreen" type="button" aria-label="Toggle fullscreen">⛶</button>
+        <button class="music" id="music" type="button"><span>♫</span><b id="musicText">Music on</b></button>
+      </div>
+    </header>
+
+    <main class="pages">
+      <section class="page active hero-page" data-page="0">
+        <div class="glow g1"></div><div class="glow g2"></div>
+        <div class="page-inner hero-layout">
+          <div class="hero-copy">
+            <span class="eyebrow">Chapter one · The birthday girl</span>
+            <h2>Happy Birthday,<em>Bushra</em></h2>
+            <p>To one of the most humble, kind-hearted friends university gave me the chance to know.</p>
+            <div class="buttons">
+              <button class="primary" data-next type="button">Begin the story <span>→</span></button>
+              <button class="glass" id="burst" type="button">Launch confetti ✦</button>
+            </div>
+            <div class="typed">May this year bring you <strong id="typedWord">joy.</strong></div>
+          </div>
+          <div class="portrait-zone">
+            <span class="orbit o1"></span><span class="orbit o2"></span>
+            <div class="portrait"><img src="assets/bushra-hero.png" alt="Bushra at her birthday celebration"></div>
+            <div class="badge badge1">Birthday girl<strong>2026</strong></div>
+            <div class="badge badge2"><strong>Beautiful soul</strong><span>in every universe</span></div>
+            <span class="float f1">🍫</span><span class="float f2">🎈</span><span class="float f3">✨</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="page note-page apology-page" data-page="1">
+        <div class="page-inner centered">
+          <div class="heading"><span class="eyebrow">Chapter two · A sincere note</span><h2>I owe you an apology</h2></div>
+          <article class="letter apology-letter">
+            <div class="letter-top"><span>To: Bushra</span><span>Please forgive me ♡</span></div>
+            <p class="dear">Dear Bushra,</p>
+            <p>I feel genuinely sorry that I forgot to wish you on time. You deserved to feel remembered and celebrated on your special day, and I’m sorry my wish arrived late.</p>
+            <p>Being late does not make this wish any less sincere. You are such a humble, kind, and wonderful friend, and I truly value the friendship university gave us.</p>
+            <p>I hope you can forgive your forgetful friend. This little surprise is my way of saying: you matter, you are appreciated, and your birthday is absolutely worth celebrating.</p>
+            <div class="signature">With a little guilt and lots of sincerity,<strong>Your university friend ♡</strong></div>
+          </article>
+          <button class="primary after-card" data-next type="button">Open your blessing <span>→</span></button>
+        </div>
+      </section>
+
+      <section class="page note-page blessing-page" data-page="2">
+        <div class="page-inner centered">
+          <div class="heading"><span class="eyebrow gold">Chapter three · A prayer for you</span><h2>A beautiful blessing</h2></div>
+          <article class="letter blessing-letter">
+            <div class="blessing-symbol">☾</div>
+            <p class="dear">Dear Bushra,</p>
+            <p>May Allah fill your new year with <strong>barakah, peace, good health, and endless happiness.</strong> May every quiet prayer in your heart find its beautiful answer.</p>
+            <p>May He protect your gentle heart, guide every step you take, open doors that are best for you, and surround you with sincere people who cherish you.</p>
+            <p>May your knowledge grow, your dreams become reality, your hardships become ease, and your smile remain bright through every season of life.</p>
+            <div class="dua">Ameen, summa ameen ✦</div>
+            <div class="signature">With the warmest prayers,<strong>For a truly lovely friend</strong></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="page gallery-page" data-page="3">
+        <div class="page-inner centered wide">
+          <div class="heading"><span class="eyebrow">Chapter four · Little moments</span><h2>Memories worth keeping</h2><p>Sweet moments for an even sweeter soul.</p></div>
+          <div class="gallery">
+            <figure class="polaroid p1"><img src="assets/bushra-snow.jpeg" alt="Bushra enjoying a snowy celebration"><figcaption>Cool moments, warm heart.</figcaption></figure>
+            <figure class="polaroid p2"><img src="assets/bushra-cake.jpeg" alt="Bushra holding her birthday cake"><figcaption>The birthday girl & her chocolate cake.</figcaption></figure>
+            <figure class="polaroid p3"><img src="assets/bushra-cake-side.jpeg" alt="Bushra looking at her birthday cake"><figcaption>Sweet memories, sweeter soul.</figcaption></figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="page chocolate-page" data-page="4">
+        <div class="page-inner centered">
+          <div class="heading"><span class="eyebrow gold">Chapter five · Pick a chocolate</span><h2>A box of sweet wishes</h2><p>Tap a chocolate to unwrap a birthday wish.</p></div>
+          <div class="chocolate-box">
+            <button class="choc c1" data-wish="May your life always have more sweet moments than bitter ones." type="button"><i>♥</i></button>
+            <button class="choc c2" data-wish="May success find you in every dream you courageously follow." type="button"><i>✦</i></button>
+            <button class="choc c3" data-wish="May your kind heart always receive the kindness it gives." type="button"><i>☾</i></button>
+            <button class="choc c4" data-wish="May this year bring beautiful surprises, peaceful days, and loud laughter." type="button"><i>♡</i></button>
+            <div class="wish-message"><span>Your sweet wish</span><p id="wishText">Choose one — every piece was wrapped especially for you.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page finale-page" data-page="5">
+        <div class="fireworks" id="fireworks"></div>
+        <div class="page-inner centered finale">
+          <div class="heading"><span class="eyebrow gold">Final chapter · One last surprise</span><h2>Make a wish, Bushra</h2><p>Tap the cake and blow out the candle.</p></div>
+          <button class="cake" id="cake" type="button" aria-label="Blow out the birthday candle">
+            <span class="flame"></span><span class="candle"></span><span class="icing"></span><span class="cake-base"></span><span class="plate"></span>
+          </button>
+          <div class="final-message" id="finalMessage">
+            <h3>Happy Birthday, Bushra!</h3>
+            <p>May your wish come true, and may your next chapter be your most beautiful one yet.</p>
+            <strong>You are appreciated more than this late wish can say. ♡</strong>
+          </div>
+          <button class="replay" id="replay" type="button">Replay the surprise ↻</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bottom-nav">
+      <button class="arrow" id="prev" type="button" aria-label="Previous chapter">←</button>
+      <div class="dots">
+        <button class="dot active" data-go="0" aria-label="Chapter 1"></button><button class="dot" data-go="1" aria-label="Chapter 2"></button><button class="dot" data-go="2" aria-label="Chapter 3"></button><button class="dot" data-go="3" aria-label="Chapter 4"></button><button class="dot" data-go="4" aria-label="Chapter 5"></button><button class="dot" data-go="5" aria-label="Chapter 6"></button>
+      </div>
+      <button class="arrow" id="next" type="button" aria-label="Next chapter">→</button>
+    </footer>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+  <audio id="song" loop preload="auto"><source src="assets/bushra-birthday-song.mp3" type="audio/mpeg"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
